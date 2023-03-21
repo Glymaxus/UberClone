@@ -148,6 +148,7 @@ struct Home : View {
             if self.search{
                 
                 SearchView(show: self.$search, map: self.$map, source: self.$source, destination: self.$destination, name: self.$name, distance: self.$distance, time: self.$time,detail: self.$show)
+                    .padding(.top, 20)
             }
         }
         .edgesIgnoringSafeArea(.all)
